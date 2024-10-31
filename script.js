@@ -89,3 +89,16 @@ document.getElementById('submit-btn').addEventListener('click', calculateResults
 
 // Initialize quiz
 renderQuiz();
+
+document.querySelectorAll('.question').forEach(question => {
+    const button = document.createElement('button');
+    button.innerText = '查看答案解析';
+    question.appendChild(button);
+
+    button.addEventListener('click', () => {
+        const explanation = document.createElement('p');
+        explanation.innerText = '这里是答案解析...'; // 添加具体解析内容
+        question.appendChild(explanation);
+    });
+});
+

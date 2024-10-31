@@ -3,22 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Exam Practice</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>在线考试</title>
+    <link rel="stylesheet" href="style.css"> <!-- 确保你的 CSS 文件在这里 -->
 </head>
 <body>
-    <h1>2021年5月北京地区成人学士学位英语考试真题</h1>
-    <div id="quiz-container">
-        <form id="quiz-form">
-            <!-- Quiz questions will be injected here by JavaScript -->
-        </form>
-        <button id="submit-btn" type="button">提交答案</button>
-    </div>
-    <div id="results-container" class="hidden">
-        <h2>结果</h2>
-        <div id="score"></div>
-        <div id="answers"></div>
-    </div>
-    <script src="script.js"></script>
+    <header>
+        <h1>在线考试</h1>
+    </header>
+    
+    <main>
+        <section id="reading-comprehension">
+            <h2>阅读理解</h2>
+            <p>（在这里插入阅读材料）</p>
+            <div class="question">
+                <p>问题 1: 这段阅读的主要内容是什么？</p>
+                <ul>
+                    <li><label><input type="radio" name="q1" value="A"> A. 选项 A</label></li>
+                    <li><label><input type="radio" name="q1" value="B"> B. 选项 B</label></li>
+                    <li><label><input type="radio" name="q1" value="C"> C. 选项 C</label></li>
+                    <li><label><input type="radio" name="q1" value="D"> D. 选项 D</label></li>
+                </ul>
+            </div>
+            <!-- 在此处添加更多问题 -->
+        </section>
+
+        <!-- 其他部分 -->
+    </main>
+
+    <footer>
+        <p>© 2024 在线考试</p>
+    </footer>
+    <script src="script.js"></script> <!-- 确保你的 JS 文件在这里 -->
 </body>
 </html>
