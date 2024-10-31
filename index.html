@@ -3,24 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comprehensive English Exam</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <title>English Exam Practice</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Comprehensive English Exam</h1>
-        <select id="exam-selector">
-            <option value="">Select an exam</option>
-            <!-- Options will be dynamically added here -->
-        </select>
-    </header>
-    <main id="quiz-container">
-        <!-- Questions will be dynamically loaded here -->
-    </main>
-    <button id="submit-btn">Submit Answers</button>
-    <div id="results"></div>
-    
-    <script src="questions/questions.js"></script>
-    <script src="scripts/main.js"></script>
+    <h1>2021年5月北京地区成人学士学位英语考试真题</h1>
+    <div id="quiz-container">
+        <form id="quiz-form">
+            <!-- Quiz questions will be injected here by JavaScript -->
+        </form>
+        <button id="submit-btn" type="button">提交答案</button>
+    </div>
+    <div id="results-container" class="hidden">
+        <h2>结果</h2>
+        <div id="score"></div>
+        <div id="answers"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
